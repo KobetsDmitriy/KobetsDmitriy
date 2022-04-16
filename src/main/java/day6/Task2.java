@@ -4,8 +4,8 @@ public class Task2 {
     public static void main(String[] args) {
         Airplane airplane = new Airplane("Boeing", 2015, 40, 20);
         airplane.info();
-        System.out.println(airplane.fillUp(1000));
-        System.out.println(airplane.fillUp(500));
+        airplane.fillUp(1000);
+        airplane.fillUp(500);
         airplane.setYear(2020);
         airplane.setLenght(50);
         airplane.info();
