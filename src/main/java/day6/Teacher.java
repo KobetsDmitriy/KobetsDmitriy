@@ -14,7 +14,24 @@ public class Teacher {
         int max = 5;
         int min = 2;
         double chislo = Math.random() * (max - min) + min;
-        System.out.println("Преподаватель " + teacherName + " оценил студента с именем " + student.getStudentName() +
-                " по предмету " + subject + " на оценку " + Math.round(chislo));
+        switch ((int) Math.round(chislo)){
+            case (2):
+                System.out.println("Преподаватель " + teacherName + " оценил студента с именем " + student.getStudentName() +
+                        " по предмету " + subject + " на оценку " + "неудовлетворительно");
+                break;
+            case (3):
+                System.out.println("Преподаватель " + teacherName + " оценил студента с именем " + student.getStudentName() +
+                        " по предмету " + subject + " на оценку " + "удовлетворительно");
+                break;
+            case (4):
+                System.out.println("Преподаватель " + teacherName + " оценил студента с именем " + student.getStudentName() +
+                        " по предмету " + subject + " на оценку " + "хорошо");
+                break;
+            case (5):
+                System.out.println("Преподаватель " + teacherName + " оценил студента с именем " + student.getStudentName() +
+                        " по предмету " + subject + " на оценку " + "отлично");
+                break;
+
+        }
     }
 }
